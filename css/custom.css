@@ -1,0 +1,71 @@
+.clickable{
+  text-decoration: underline;
+  min-width: 150px;
+}
+.clickable:hover,table>thead>tr.info>th.clickable:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #4078c0;
+  color: #FFF;
+}
+.paginationcontainer {
+  display: block;
+  background-color: #eee;
+  padding: 8px 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+.paginationcontainer h4 {
+  color: #337ab7;
+  margin: 0;
+  padding-top: 3px;
+  text-align: center;
+}
+.paginationcontainer .pagination {
+  margin: 15px 20px 5px;
+}
+.pagination>li {
+  display: inline;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination>li>a:hover {
+  cursor: pointer;
+}
+.pagination>li>a, .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.table {
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1000px) {
+  .paginationcontainer.affix {
+    display: block;
+    z-index: 10000;
+  }
+  .table {
+    margin-top: 90px;
+  }
+  .clickable{
+    min-width: auto;
+  }
+}
