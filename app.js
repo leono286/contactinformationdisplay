@@ -4,12 +4,12 @@
   app.controller('mainCtrl', ['$scope', '$http', '$filter', function($scope, $http, $filter){
 
     $scope.contacts = [];
-    $http.get('assets/Contacts.json').success(function(data){
+    $http.get('Contacts.json').success(function(data){
       $scope.contacts = data;
     });
 
     $scope.outlets = [];
-    var request =  $http.get('assets/Outlets.json').success(function(data){
+    var request =  $http.get('Outlets.json').success(function(data){
       $scope.outlets = data;
 
       // This function is performed to add to each contact its corresponding outlet name
